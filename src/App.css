@@ -1,5 +1,17 @@
+body {
+  font-family : 'Poppins', sans-serif;
+  background : rgb(250, 249, 249);
+  margin : 0;
+  box-sizing : border-box;
+  min-height : 100vh;
+  display : flex;
+  justify-content : center;
+  position : relative;
+  width : 100vw;
+  overflowx: hidden;
+}
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {

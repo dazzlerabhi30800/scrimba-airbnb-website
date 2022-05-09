@@ -1,0 +1,55 @@
+
+.nav-bar {
+    background : #fff;
+    padding : 1rem .5rem;
+    box-shadow : 1px 1px 10px 3px rgba(0, 0, 0, 0.075);
+    width : 100vw;
+}
+
+.navbar-logo {
+    position : relative;
+    width : 100px;
+    height : 30px;
+    display : flex;
+    margin-left : 1rem;
+    cursor : pointer;
+}
+.navbar-logo > img {
+    position : absolute;
+    width : fit-content;
+    height : fit-content;
+    object-fit : cover;
+}
+
+.main {
+    display : flex;
+    flex-direction : column;
+    padding : 1rem 1rem;
+    gap : 2rem;
+}
+.hero-img {
+    position : relative;
+    width : 100vw;
+    height : 300px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    padding : 0rem 1rem;
+}
+.hero-img > img {
+    position : absolute;
+    width : fit-content;
+    height : 300px;
+    object-fit : cover;
+}
+
+.text-wrapper {
+    padding : .4rem 4rem;
+    margin-left : 1rem;
+    /* background : red; */
+}
+.text-wrapper > p {
+    /* width : 320px; */
+    width : fit-content;
+    font-size : 1rem;
+}
