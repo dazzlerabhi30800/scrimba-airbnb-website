@@ -13,13 +13,13 @@ function CardComp(props) {
     return (
         <div className="card">
             <div className="card-img">
-                <img src={`./images/${props.img}`} alt="" />
+                <img src={`./images/${props.coverImg}`} alt="" />
                 {badgeText && <span className='status'>{badgeText}</span>}
             </div>
             <div className="rating-wrapper">
                 <img src={StarImg} alt="" />
-                <p className="rating">{props.rating}</p>
-                <span className="person">{props.reviewCount}</span>
+                <p className="rating">{props.stats.rating}</p>
+                <span className="person">{props.stats.reviewCount}</span>
                 <div className="rectangle"></div>
                 <div className="country">{props.location}</div>
             </div>

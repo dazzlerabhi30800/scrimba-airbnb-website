@@ -10,15 +10,9 @@ function Card(props) {
     const cardComp = data.map((item, index) => {
         return (
             <CardComp
-                img={item.coverImg} 
-                // key={index}
                 key={item.id}
-                title={item.title}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                price={item.price}
-                openSpots={item.openSpots}
+                // item={item}
+                {...item}
             />
         )
     })
