@@ -3,10 +3,18 @@ import './Card.css';
 import StarImg from './images/star.png'
 
 function CardComp(props) {
+
+    let badgeText
+    if(props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if(props.location === "Online") {
+        badgeText = "ONLINE"
+    }
     return (
         <div className="card">
             <div className="card-img">
                 <img src={`./images/${props.img}`} alt="" />
+                {badgeText && <span className='status'>{badgeText}</span>}
             </div>
             <div className="rating-wrapper">
                 <img src={StarImg} alt="" />

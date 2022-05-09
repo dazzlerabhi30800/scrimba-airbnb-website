@@ -8,7 +8,7 @@ body {
   justify-content : center;
   position : relative;
   width : 100vw;
-  overflowx: hidden;
+  overflow-x: hidden;
 }
 .App {
   /* text-align: center; */
